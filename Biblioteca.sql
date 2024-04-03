@@ -18,6 +18,7 @@ CREATE TABLE Ejemplares (
     id_ejemplar INT PRIMARY KEY,
     id_material INT,
     disponible BOOLEAN,
+    sala_lectura_only BOOLEAN, -- Indica si el ejemplar solo puede consultarse en la sala de lectura
     FOREIGN KEY (id_material) REFERENCES MaterialBibliografico(id_material)
 );
 -- 5-Creación tabla de Préstamos:
